@@ -13,19 +13,6 @@ export function App() {
   const existingContacts = useSelector(state => state.contacts.items);
   const filter = useSelector(state => state.contacts.filter);
 
-  // const [contacts, setContacts] = useState(
-  //   JSON.parse(window.localStorage.getItem('contacts')) ?? []
-  // );
-  // const [filter, setFilter] = useState('');
-
-  // useEffect(() => {
-  //   if (contacts.length === 0) {
-  //     toast.warning(`You don't have contacts, please add a new contact`);
-  //   }
-
-  //   localStorage.setItem('contacts', JSON.stringify(contacts));
-  // }, [contacts]);
-
   const formSubmitHandler = data => {
     const { name, number } = data;
 
